@@ -15,6 +15,7 @@ class _LbpToDollarState extends State<LbpToDollar> {
     return  Scaffold(
       appBar: AppBar(
         title: Text("LBP To Dollar Converter"),
+        backgroundColor: Colors.black,
       ),
       body: Container(
         padding: EdgeInsets.all(20.0),
@@ -25,8 +26,12 @@ class _LbpToDollarState extends State<LbpToDollar> {
               keyboardType: TextInputType.number,
               controller:lbpController ,
               decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'Enter LBP need to convert'
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                labelText: 'Enter LBP need to convert',
+                labelStyle: TextStyle(color: Colors.blue, fontSize: 15),
+                suffix: Icon(Icons.currency_lira_sharp),
               ),
 
             ),
@@ -40,6 +45,19 @@ class _LbpToDollarState extends State<LbpToDollar> {
                   });
                 },
                 child: Text("Convert"),
+                style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.all(20.0),
+                backgroundColor: Colors.black,
+                elevation: 50,
+                shadowColor: Colors.black,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                textStyle: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                ),
+              ),
             ),
 
             SizedBox(
