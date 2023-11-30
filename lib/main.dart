@@ -39,19 +39,19 @@ class CurrencyConverter extends StatelessWidget {
             ElevatedButton.icon(
                 onPressed: (){
                   Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => currency()));
+                    MaterialPageRoute(builder: (context) => const currency()));
                 },
-              icon: Icon(Icons.currency_exchange),
-                label: Text("The price Currencies"),
+              icon: const Icon(Icons.currency_exchange),
+                label: const Text("Click To See  Currencies"),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.black,
-                padding: EdgeInsets.all(30),
+                padding: const EdgeInsets.all(30),
                 elevation: 50,
                 shadowColor: Colors.black,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
-                textStyle: TextStyle(
+                textStyle: const TextStyle(
                   fontSize: 22.0,
                   fontWeight: FontWeight.bold,
                 ),
@@ -59,7 +59,7 @@ class CurrencyConverter extends StatelessWidget {
 
             ),
 
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
 
@@ -70,97 +70,97 @@ class CurrencyConverter extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30.0,
             ),
             ElevatedButton(
               onPressed: () {
                 Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => DollarToLbp()));
+                    MaterialPageRoute(builder: (context) => const DollarToLbp()));
               },
-              child: Text('Dollar To LBP', style: TextStyle(fontSize: 18.0)),
               style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(20.0),
+                padding: const EdgeInsets.all(20.0),
                 backgroundColor: Colors.black,
                 elevation: 50,
                 shadowColor: Colors.black,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
-                textStyle: TextStyle(
+                textStyle: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
                 ),
               ),
+              child: const Text('Dollar To LBP', style: TextStyle(fontSize: 18.0)),
             ),
-            SizedBox(
+            const SizedBox(
               height: 25.0,
             ),
             ElevatedButton(
               onPressed: () {
                 Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => LbpToDollar()));
+                    MaterialPageRoute(builder: (context) => const LbpToDollar()));
               },
-              child: Text('LBP To Dollar', style: TextStyle(fontSize: 18.0)),
               style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(20),
+                padding: const EdgeInsets.all(20),
                 backgroundColor: Colors.black,
                 elevation: 50,
                 shadowColor: Colors.black,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
-                textStyle: TextStyle(
+                textStyle: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
                 ),
               ),
+              child: const Text('LBP To Dollar', style: TextStyle(fontSize: 18.0)),
             ),
-            SizedBox(
+            const SizedBox(
               height: 25.0,
             ),
             ElevatedButton(
               onPressed: () {
                 Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => DollarToEuro()));
+                    MaterialPageRoute(builder: (context) => const DollarToEuro()));
               },
-              child: Text("Dollar To Euro", style: TextStyle(fontSize: 18.0)),
               style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(20),
+                padding: const EdgeInsets.all(20),
                 backgroundColor: Colors.black,
                 elevation: 50,
                 shadowColor: Colors.black,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
-                textStyle: TextStyle(
+                textStyle: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
                 ),
               ),
+              child: const Text("Dollar To Euro", style: TextStyle(fontSize: 18.0)),
             ),
-            SizedBox(
+            const SizedBox(
               height: 25.0,
             ),
             ElevatedButton(
               onPressed: () {
                 Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => EuroToDollar()));
+                    MaterialPageRoute(builder: (context) => const EuroToDollar()));
               },
-              child: Text("Euro To Dollar", style: TextStyle(fontSize: 18.0)),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.black,
-                padding: EdgeInsets.all(20.0),
+                padding: const EdgeInsets.all(20.0),
                 elevation: 50,
                 shadowColor: Colors.black,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
-                textStyle: TextStyle(
+                textStyle: const TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              child: const Text("Euro To Dollar", style: TextStyle(fontSize: 18.0)),
             ),
 
 

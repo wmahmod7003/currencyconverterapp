@@ -14,11 +14,11 @@ class _EuroToDollarState extends State<EuroToDollar> {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar:AppBar(
-        title:Text("Euro To Dollar Converter"),
+        title:const Text("Euro To Dollar Converter"),
         backgroundColor: Colors.black,
       ),
       body: Container(
-        padding: EdgeInsets.all(20.0),
+        padding: const EdgeInsets.all(20.0),
         child: Column(
           children: [
 
@@ -32,11 +32,11 @@ class _EuroToDollarState extends State<EuroToDollar> {
                 // hintText: 'Enter Euro need to convert',
                 // helperStyle:TextStyle(fontSize: 10,fontWeight: FontWeight.bold),
                 labelText: 'Enter Euro need to convert',
-                labelStyle: TextStyle(color: Colors.blue, fontSize: 15),
-                suffix: Icon(Icons.euro),
+                labelStyle: const TextStyle(color: Colors.blue, fontSize: 15),
+                suffix: const Icon(Icons.euro),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30.0,
             ),
 
@@ -46,29 +46,29 @@ class _EuroToDollarState extends State<EuroToDollar> {
                     dollar=double.parse(EuroController.text) * 1.2;
                   });
                 },
-                child: Text("Convert"),
+                child: const Text("Convert"),
               style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(20.0),
+                padding: const EdgeInsets.all(20.0),
                 backgroundColor: Colors.black,
                 elevation: 50,
                 shadowColor: Colors.black,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
-                textStyle: TextStyle(
+                textStyle: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
                 ),
               ),
             ),
 
-            SizedBox(
+            const SizedBox(
               height: 30.0,
             ),
 
             Text(
               "Dollar: "+dollar.toString()+ "\$",
-              style:TextStyle(
+              style:const TextStyle(
                 fontSize: 30.0
               ) ,
             ),

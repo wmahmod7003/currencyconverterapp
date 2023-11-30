@@ -14,11 +14,11 @@ class _LbpToDollarState extends State<LbpToDollar> {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
-        title: Text("LBP To Dollar Converter"),
+        title: const Text("LBP To Dollar Converter"),
         backgroundColor: Colors.black,
       ),
       body: Container(
-        padding: EdgeInsets.all(20.0),
+        padding: const EdgeInsets.all(20.0),
         child: Column(
           children: [
 
@@ -30,8 +30,8 @@ class _LbpToDollarState extends State<LbpToDollar> {
                   borderRadius: BorderRadius.circular(20),
                 ),
                 labelText: 'Enter LBP need to convert',
-                labelStyle: TextStyle(color: Colors.blue, fontSize: 15),
-                suffix: Icon(Icons.currency_lira_sharp),
+                labelStyle: const TextStyle(color: Colors.blue, fontSize: 15),
+                suffix: const Icon(Icons.currency_lira_sharp),
               ),
 
             ),
@@ -44,28 +44,28 @@ class _LbpToDollarState extends State<LbpToDollar> {
                     dollar=double.parse(lbpController.text) / 89500.0 ;
                   });
                 },
-                child: Text("Convert"),
+                child: const Text("Convert"),
                 style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(20.0),
+                padding: const EdgeInsets.all(20.0),
                 backgroundColor: Colors.black,
                 elevation: 50,
                 shadowColor: Colors.black,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
-                textStyle: TextStyle(
+                textStyle: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
                 ),
               ),
             ),
 
-            SizedBox(
+            const SizedBox(
               height: 30.0,
             ),
 
             Text("Result : " +dollar.toString()+" \$",
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 30.0,
               ),
 
